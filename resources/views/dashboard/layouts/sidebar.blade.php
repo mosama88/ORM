@@ -65,7 +65,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('posts.index') }}" class="nav-link">
+                            <a href="{{ route('posts.index') }}" class="nav-link @yield('active-posts-index')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Index</p>
                             </a>
@@ -75,7 +75,7 @@
 
 
                 <li class="nav-item">
-                    <a href="{{ url('/' . ($page = 'widgets')) }}" class="nav-link">
+                    <a href="{{ url('/' . ($page = 'widgets')) }}" class="nav-link @yield('active-widgets')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Widgets
@@ -94,37 +94,41 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'layout-top-nav')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'layout-top-nav')) }}" class="nav-link @yield('active-layout-top-nav')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Top Navigation</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'layout-boxed')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'layout-boxed')) }}" class="nav-link @yield('active-layout-boxed')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Boxed</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'layout-fixed-sidebar')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'layout-fixed-sidebar')) }}"
+                                class="nav-link @yield('active-layout-fixed-sidebar')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Fixed Sidebar</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'layout-fixed-topnav')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'layout-fixed-topnav')) }}"
+                                class="nav-link @yield('active-layout-fixed-topnav')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Fixed Navbar</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'layout-fixed-footer')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'layout-fixed-footer')) }}"
+                                class="nav-link @yield('active-layout-fixed-footer')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Fixed Footer</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'layout-collapsed-sidebar')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'layout-collapsed-sidebar')) }}"
+                                class="nav-link @yield('active-layout-collapsed-sidebar')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Collapsed Sidebar</p>
                             </a>
@@ -141,19 +145,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'charts-chartjs')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'charts-chartjs')) }}" class="nav-link @yield('active-charts-chartjs')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>ChartJS</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'charts-flot')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'charts-flot')) }}" class="nav-link @yield('active-charts-flot')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Flot</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'charts-inline')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'charts-inline')) }}" class="nav-link @yield('active-charts-inline')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Inline</p>
                             </a>
@@ -170,49 +174,49 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'UI-general')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'UI-general')) }}" class="nav-link @yield('active-UI-general')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>General</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'UI-icons')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'UI-icons')) }}" class="nav-link @yield('active-UI-icons')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Icons</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'UI-buttons')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'UI-buttons')) }}" class="nav-link @yield('active-UI-buttons')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Buttons</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'UI-sliders')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'UI-sliders')) }}" class="nav-link @yield('active-UI-sliders')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Sliders</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'UI-modals')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'UI-modals')) }}" class="nav-link @yield('active-UI-modals')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Modals & Alerts</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'UI-navbar')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'UI-navbar')) }}" class="nav-link @yield('active-UI-navbar')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Navbar & Tabs</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'UI-timeline')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'UI-timeline')) }}" class="nav-link @yield('active-UI-timeline')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Timeline</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'UI-ribbons')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'UI-ribbons')) }}" class="nav-link @yield('active-UI-ribbons')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Ribbons</p>
                             </a>
@@ -229,19 +233,20 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'forms-general')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'forms-general')) }}" class="nav-link @yield('active-forms-general')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>General Elements</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'forms-advanced')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'forms-advanced')) }}"
+                                class="nav-link @yield('active-forms-advanced')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Advanced Elements</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'forms-editors')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'forms-editors')) }}" class="nav-link @yield('active-forms-editors')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Editors</p>
                             </a>
@@ -258,19 +263,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'tables-simple')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'tables-simple')) }}" class="nav-link @yield('active-tables-simple')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Simple Tables</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'tables-data')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'tables-data')) }}" class="nav-link @yield('active-tables-data')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>DataTables</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'tables-jsgrid')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'tables-jsgrid')) }}" class="nav-link @yield('active-tables-jsgrid')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>jsGrid</p>
                             </a>
@@ -279,7 +284,8 @@
                 </li>
                 <li class="nav-header">EXAMPLES</li>
                 <li class="nav-item">
-                    <a href="pages/calendar.html" class="nav-link">
+                    <a href="pages/calendar.html{{ url('/' . ($page = 'calendar')) }}"
+                        class="nav-link @yield('active-calendar')">
                         <i class="nav-icon far fa-calendar-alt"></i>
                         <p>
                             Calendar
@@ -288,7 +294,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url('/' . ($page = 'gallery')) }}" class="nav-link">
+                    <a href="{{ url('/' . ($page = 'gallery')) }}" class="nav-link @yield('active-gallery')">
                         <i class="nav-icon far fa-image"></i>
                         <p>
                             Gallery
@@ -305,19 +311,21 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'mailbox')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'mailbox')) }}" class="nav-link @yield('active-mailbox')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Inbox</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'mailbox-compose')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'mailbox-compose')) }}"
+                                class="nav-link @yield('active-mailbox-compose')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Compose</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'mailbox-read-mail')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'mailbox-read-mail')) }}"
+                                class="nav-link @yield('active-mailbox-read-mail')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Read</p>
                             </a>
@@ -334,49 +342,56 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-invoice')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-invoice')) }}"
+                                class="nav-link @yield('active-examples-invoice')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Invoice</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'profile')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'profile')) }}" class="nav-link @yield('active-profile')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Profile</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-e_commerce')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-e_commerce')) }}"
+                                class="nav-link @yield('active-examples-e_commerce')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>E-commerce</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-projects')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-projects')) }}"
+                                class="nav-link @yield('active-examples-projects')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Projects</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-project_add')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-project_add')) }}"
+                                class="nav-link @yield('active-examples-project_add')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Project Add</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-project_edit')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-project_edit')) }}"
+                                class="nav-link @yield('active-examples-project_edit')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Project Edit</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-project_detail')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-project_detail')) }}"
+                                class="nav-link @yield('active-examples-project_detail')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Project Detail</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-contacts')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-contacts')) }}"
+                                class="nav-link @yield('active-examples-contacts')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Contacts</p>
                             </a>
@@ -393,55 +408,57 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'login')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'login')) }}" class="nav-link @yield('active-login')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Login</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'register')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'register')) }}" class="nav-link @yield('active-register')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Register</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'lockscreen')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'lockscreen')) }}" class="nav-link @yield('active-lockscreen')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Lockscreen</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-legacy-user-menu')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-legacy-user-menu')) }}"
+                                class="nav-link @yield('active-examples-legacy-user-menu')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Legacy User Menu</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-language-menu')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-language-menu')) }}"
+                                class="nav-link @yield('active-examples-language-menu')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Language Menu</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-404')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-404')) }}" class="nav-link @yield('active-examples-404')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Error 404</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'examples-500')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'examples-500')) }}" class="nav-link @yield('active-examples-500')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Error 500</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'blank')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'blank')) }}" class="nav-link @yield('active-blank')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Blank Page</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'starter')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'starter')) }}" class="nav-link @yield('active-starter')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Starter Page</p>
                             </a>
@@ -450,7 +467,7 @@
                 </li>
                 <li class="nav-header">MISCELLANEOUS</li>
                 <li class="nav-item">
-                    <a href="https://adminlte.io/docs/3.0" class="nav-link">
+                    <a href="https://adminlte.io/docs/3.0" class="nav-link @yield('active-index')">
                         <i class="nav-icon fas fa-file"></i>
                         <p>Documentation</p>
                     </a>
