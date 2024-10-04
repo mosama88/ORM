@@ -8,11 +8,11 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="{{ asset('assets') }}/dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <!-- Bootstrap 4 RTL -->
@@ -31,7 +31,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../index3.html" class="nav-link">Home</a>
+                    <a href="{{ asset('assets') }}/index3.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -63,7 +63,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../dist/img/user1-128x128.jpg" alt="User Avatar"
+                                <img src="{{ asset('assets') }}/dist/img/user1-128x128.jpg" alt="User Avatar"
                                     class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
@@ -80,7 +80,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../dist/img/user8-128x128.jpg" alt="User Avatar"
+                                <img src="{{ asset('assets') }}/dist/img/user8-128x128.jpg" alt="User Avatar"
                                     class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
@@ -97,7 +97,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../dist/img/user3-128x128.jpg" alt="User Avatar"
+                                <img src="{{ asset('assets') }}/dist/img/user3-128x128.jpg" alt="User Avatar"
                                     class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
@@ -152,468 +152,7 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
-            <!-- Brand Logo -->
-            <a href="../index3.html" class="brand-link">
-                <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
-                    class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">AdminLTE 3</span>
-            </a>
-
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <!-- Sidebar user panel (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
-                    </div>
-                </div>
-
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                        data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Dashboard
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="../index.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Dashboard v1</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../index2.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Dashboard v2</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../index3.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Dashboard v3</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="widgets.html" class="nav-link active">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Widgets
-                                    <span class="right badge badge-danger">New</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-copy"></i>
-                                <p>
-                                    Layout Options
-                                    <i class="fas fa-angle-left right"></i>
-                                    <span class="badge badge-info right">6</span>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="layout/top-nav.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Top Navigation</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="layout/boxed.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Boxed</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="layout/fixed-sidebar.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Fixed Sidebar</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="layout/fixed-topnav.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Fixed Navbar</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="layout/fixed-footer.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Fixed Footer</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="layout/collapsed-sidebar.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Collapsed Sidebar</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
-                                <p>
-                                    Charts
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="charts/chartjs.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>ChartJS</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="charts/flot.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Flot</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Inline</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tree"></i>
-                                <p>
-                                    UI Elements
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="UI/general.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>General</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="UI/icons.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Icons</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="UI/buttons.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Buttons</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="UI/sliders.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Sliders</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="UI/modals.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Modals & Alerts</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="UI/navbar.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Navbar & Tabs</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="UI/timeline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Timeline</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="UI/ribbons.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Ribbons</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-edit"></i>
-                                <p>
-                                    Forms
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="forms/general.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>General Elements</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="forms/advanced.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Advanced Elements</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="forms/editors.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Editors</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>
-                                    Tables
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="tables/simple.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Simple Tables</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="tables/data.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>DataTables</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="tables/jsgrid.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>jsGrid</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-header">EXAMPLES</li>
-                        <li class="nav-item">
-                            <a href="calendar.html" class="nav-link">
-                                <i class="nav-icon far fa-calendar-alt"></i>
-                                <p>
-                                    Calendar
-                                    <span class="badge badge-info right">2</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="gallery.html" class="nav-link">
-                                <i class="nav-icon far fa-image"></i>
-                                <p>
-                                    Gallery
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-envelope"></i>
-                                <p>
-                                    Mailbox
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="mailbox/mailbox.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Inbox</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="mailbox/compose.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Compose</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="mailbox/read-mail.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Read</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-book"></i>
-                                <p>
-                                    Pages
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="examples/invoice.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Invoice</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/profile.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Profile</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/e_commerce.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>E-commerce</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/projects.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Projects</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/project_add.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Project Add</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/project_edit.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Project Edit</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/project_detail.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Project Detail</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/contacts.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Contacts</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-plus-square"></i>
-                                <p>
-                                    Extras
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="examples/login.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Login</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/register.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Register</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/lockscreen.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Lockscreen</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/legacy-user-menu.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Legacy User Menu</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/language-menu.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Language Menu</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/404.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Error 404</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/500.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Error 500</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="examples/blank.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Blank Page</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../starter.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Starter Page</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-header">MISCELLANEOUS</li>
-                        <li class="nav-item">
-                            <a href="https://adminlte.io/docs/3.0" class="nav-link">
-                                <i class="nav-icon fas fa-file"></i>
-                                <p>Documentation</p>
-                            </a>
-                        </li>
-                        <li class="nav-header">LABELS</li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-circle text-danger"></i>
-                                <p class="text">Important</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-circle text-warning"></i>
-                                <p>Warning</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-circle text-info"></i>
-                                <p>Informational</p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- /.sidebar-menu -->
-            </div>
-            <!-- /.sidebar -->
-        </aside>
-
+   @include('dashboard.layouts.sidebar')
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
@@ -1534,7 +1073,8 @@
                                                 <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                                             </div>
                                             <!-- /.direct-chat-infos -->
-                                            <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg"
+                                            <img class="direct-chat-img"
+                                                src="{{ asset('assets') }}/dist/img/user1-128x128.jpg"
                                                 alt="Message User Image">
                                             <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
@@ -1551,7 +1091,8 @@
                                                 <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                                             </div>
                                             <!-- /.direct-chat-infos -->
-                                            <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg"
+                                            <img class="direct-chat-img"
+                                                src="{{ asset('assets') }}/dist/img/user3-128x128.jpg"
                                                 alt="Message User Image">
                                             <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
@@ -1569,7 +1110,7 @@
                                             <li>
                                                 <a href="#">
                                                     <img class="contacts-list-img"
-                                                        src="../dist/img/user1-128x128.jpg">
+                                                        src="{{ asset('assets') }}/dist/img/user1-128x128.jpg">
 
                                                     <div class="contacts-list-info">
                                                         <span class="contacts-list-name">
@@ -1638,7 +1179,8 @@
                                                 <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                                             </div>
                                             <!-- /.direct-chat-infos -->
-                                            <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg"
+                                            <img class="direct-chat-img"
+                                                src="{{ asset('assets') }}/dist/img/user1-128x128.jpg"
                                                 alt="Message User Image">
                                             <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
@@ -1655,7 +1197,8 @@
                                                 <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                                             </div>
                                             <!-- /.direct-chat-infos -->
-                                            <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg"
+                                            <img class="direct-chat-img"
+                                                src="{{ asset('assets') }}/dist/img/user3-128x128.jpg"
                                                 alt="Message User Image">
                                             <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
@@ -1673,7 +1216,7 @@
                                             <li>
                                                 <a href="#">
                                                     <img class="contacts-list-img"
-                                                        src="../dist/img/user1-128x128.jpg">
+                                                        src="{{ asset('assets') }}/dist/img/user1-128x128.jpg">
 
                                                     <div class="contacts-list-info">
                                                         <span class="contacts-list-name">
@@ -1742,7 +1285,8 @@
                                                 <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                                             </div>
                                             <!-- /.direct-chat-infos -->
-                                            <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg"
+                                            <img class="direct-chat-img"
+                                                src="{{ asset('assets') }}/dist/img/user1-128x128.jpg"
                                                 alt="Message User Image">
                                             <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
@@ -1759,7 +1303,8 @@
                                                 <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                                             </div>
                                             <!-- /.direct-chat-infos -->
-                                            <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg"
+                                            <img class="direct-chat-img"
+                                                src="{{ asset('assets') }}/dist/img/user3-128x128.jpg"
                                                 alt="Message User Image">
                                             <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
@@ -1777,7 +1322,7 @@
                                             <li>
                                                 <a href="#">
                                                     <img class="contacts-list-img"
-                                                        src="../dist/img/user1-128x128.jpg">
+                                                        src="{{ asset('assets') }}/dist/img/user1-128x128.jpg">
 
                                                     <div class="contacts-list-info">
                                                         <span class="contacts-list-name">
@@ -1845,7 +1390,8 @@
                                                 <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                                             </div>
                                             <!-- /.direct-chat-infos -->
-                                            <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg"
+                                            <img class="direct-chat-img"
+                                                src="{{ asset('assets') }}/dist/img/user1-128x128.jpg"
                                                 alt="Message User Image">
                                             <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
@@ -1862,7 +1408,8 @@
                                                 <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                                             </div>
                                             <!-- /.direct-chat-infos -->
-                                            <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg"
+                                            <img class="direct-chat-img"
+                                                src="{{ asset('assets') }}/dist/img/user3-128x128.jpg"
                                                 alt="Message User Image">
                                             <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
@@ -1880,7 +1427,7 @@
                                             <li>
                                                 <a href="#">
                                                     <img class="contacts-list-img"
-                                                        src="../dist/img/user1-128x128.jpg">
+                                                        src="{{ asset('assets') }}/dist/img/user1-128x128.jpg">
 
                                                     <div class="contacts-list-info">
                                                         <span class="contacts-list-name">
@@ -1929,7 +1476,8 @@
                                 <!-- Add the bg color to the header using any of the bg-* classes -->
                                 <div class="widget-user-header bg-warning">
                                     <div class="widget-user-image">
-                                        <img class="img-circle elevation-2" src="../dist/img/user7-128x128.jpg"
+                                        <img class="img-circle elevation-2"
+                                            src="{{ asset('assets') }}/dist/img/user7-128x128.jpg"
                                             alt="User Avatar">
                                     </div>
                                     <!-- /.widget-user-image -->
@@ -1974,8 +1522,8 @@
                                     <h5 class="widget-user-desc">Founder & CEO</h5>
                                 </div>
                                 <div class="widget-user-image">
-                                    <img class="img-circle elevation-2" src="../dist/img/user1-128x128.jpg"
-                                        alt="User Avatar">
+                                    <img class="img-circle elevation-2"
+                                        src="{{ asset('assets') }}/dist/img/user1-128x128.jpg" alt="User Avatar">
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">
@@ -2020,7 +1568,8 @@
                                     <h5 class="widget-user-desc text-right">Web Designer</h5>
                                 </div>
                                 <div class="widget-user-image">
-                                    <img class="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar">
+                                    <img class="img-circle" src="{{ asset('assets') }}/dist/img/user3-128x128.jpg"
+                                        alt="User Avatar">
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">
@@ -2064,7 +1613,8 @@
                             <div class="card card-widget">
                                 <div class="card-header">
                                     <div class="user-block">
-                                        <img class="img-circle" src="../dist/img/user1-128x128.jpg"
+                                        <img class="img-circle"
+                                            src="{{ asset('assets') }}/dist/img/user1-128x128.jpg"
                                             alt="User Image">
                                         <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
                                         <span class="description">Shared publicly - 7:30 PM Today</span>
@@ -2085,7 +1635,8 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <img class="img-fluid pad" src="../dist/img/photo2.png" alt="Photo">
+                                    <img class="img-fluid pad" src="{{ asset('assets') }}/dist/img/photo2.png"
+                                        alt="Photo">
 
                                     <p>I took this photo this morning. What do you guys think?</p>
                                     <button type="button" class="btn btn-default btn-sm"><i
@@ -2098,7 +1649,8 @@
                                 <div class="card-footer card-comments">
                                     <div class="card-comment">
                                         <!-- User image -->
-                                        <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg"
+                                        <img class="img-circle img-sm"
+                                            src="{{ asset('assets') }}/dist/img/user3-128x128.jpg"
                                             alt="User Image">
 
                                         <div class="comment-text">
@@ -2114,7 +1666,8 @@
                                     <!-- /.card-comment -->
                                     <div class="card-comment">
                                         <!-- User image -->
-                                        <img class="img-circle img-sm" src="../dist/img/user4-128x128.jpg"
+                                        <img class="img-circle img-sm"
+                                            src="{{ asset('assets') }}/dist/img/user4-128x128.jpg"
                                             alt="User Image">
 
                                         <div class="comment-text">
@@ -2132,8 +1685,8 @@
                                 <!-- /.card-footer -->
                                 <div class="card-footer">
                                     <form action="#" method="post">
-                                        <img class="img-fluid img-circle img-sm" src="../dist/img/user4-128x128.jpg"
-                                            alt="Alt Text">
+                                        <img class="img-fluid img-circle img-sm"
+                                            src="{{ asset('assets') }}/dist/img/user4-128x128.jpg" alt="Alt Text">
                                         <!-- .img-push is used to add margin to elements next to floating images -->
                                         <div class="img-push">
                                             <input type="text" class="form-control form-control-sm"
@@ -2151,7 +1704,8 @@
                             <div class="card card-widget">
                                 <div class="card-header">
                                     <div class="user-block">
-                                        <img class="img-circle" src="../dist/img/user1-128x128.jpg"
+                                        <img class="img-circle"
+                                            src="{{ asset('assets') }}/dist/img/user1-128x128.jpg"
                                             alt="User Image">
                                         <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
                                         <span class="description">Shared publicly - 7:30 PM Today</span>
@@ -2185,7 +1739,7 @@
 
                                     <!-- Attachment -->
                                     <div class="attachment-block clearfix">
-                                        <img class="attachment-img" src="../dist/img/photo1.png"
+                                        <img class="attachment-img" src="{{ asset('assets') }}/dist/img/photo1.png"
                                             alt="Attachment Image">
 
                                         <div class="attachment-pushed">
@@ -2214,7 +1768,8 @@
                                 <div class="card-footer card-comments">
                                     <div class="card-comment">
                                         <!-- User image -->
-                                        <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg"
+                                        <img class="img-circle img-sm"
+                                            src="{{ asset('assets') }}/dist/img/user3-128x128.jpg"
                                             alt="User Image">
 
                                         <div class="comment-text">
@@ -2230,7 +1785,8 @@
                                     <!-- /.card-comment -->
                                     <div class="card-comment">
                                         <!-- User image -->
-                                        <img class="img-circle img-sm" src="../dist/img/user5-128x128.jpg"
+                                        <img class="img-circle img-sm"
+                                            src="{{ asset('assets') }}/dist/img/user5-128x128.jpg"
                                             alt="User Image">
 
                                         <div class="comment-text">
@@ -2249,8 +1805,8 @@
                                 <!-- /.card-footer -->
                                 <div class="card-footer">
                                     <form action="#" method="post">
-                                        <img class="img-fluid img-circle img-sm" src="../dist/img/user4-128x128.jpg"
-                                            alt="Alt Text">
+                                        <img class="img-fluid img-circle img-sm"
+                                            src="{{ asset('assets') }}/dist/img/user4-128x128.jpg" alt="Alt Text">
                                         <!-- .img-push is used to add margin to elements next to floating images -->
                                         <div class="img-push">
                                             <input type="text" class="form-control form-control-sm"
@@ -2293,13 +1849,13 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="../plugins/jquery/jquery.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets') }}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../dist/js/adminlte.min.js"></script>
+    <script src="{{ asset('assets') }}/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="../dist/js/demo.js"></script>
+    <script src="{{ asset('assets') }}/dist/js/demo.js"></script>
 </body>
 
 </html>
