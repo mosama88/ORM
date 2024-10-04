@@ -8,7 +8,7 @@ use App\Http\Controllers\ProfileController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/{page}', [PageController::class, 'home']);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard.index');
@@ -22,6 +22,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('posts', POSTController::class);
 });
 
-
+Route::get('/{page}', [PageController::class, 'home']);
 
 require __DIR__ . '/auth.php';

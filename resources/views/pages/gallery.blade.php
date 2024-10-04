@@ -7,13 +7,13 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="{{asset('assets')}}/plugins/fontawesome-free/css/all.min.css">
   <!-- Ekko Lightbox -->
-  <link rel="stylesheet" href="../plugins/ekko-lightbox/ekko-lightbox.css">
+  <link rel="stylesheet" href="{{asset('assets')}}/plugins/ekko-lightbox/ekko-lightbox.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="{{asset('assets')}}/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
       <!-- Bootstrap 4 RTL -->
@@ -31,7 +31,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../index3.html" class="nav-link">Home</a>
+        <a href="{{asset('assets')}}/index3.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -149,7 +149,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../index3.html" class="brand-link">
+    <a href="{{asset('assets')}}/index3.html" class="brand-link">
       <img src="../dist/img/AdminLTELogo.png"
            alt="AdminLTE Logo"
            class="brand-image img-circle elevation-3"
@@ -184,19 +184,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../index.html" class="nav-link">
+                <a href="{{asset('assets')}}/index.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v1</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../index2.html" class="nav-link">
+                <a href="{{asset('assets')}}/index2.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v2</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../index3.html" class="nav-link">
+                <a href="{{asset('assets')}}/index3.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard v3</p>
                 </a>
@@ -570,7 +570,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../starter.html" class="nav-link">
+                <a href="{{asset('assets')}}/starter.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Starter Page</p>
                 </a>
@@ -827,19 +827,19 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="{{asset('assets')}}/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('assets')}}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- jQuery UI -->
-<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="{{asset('assets')}}/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Ekko Lightbox -->
-<script src="../plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
+<script src="{{asset('assets')}}/plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../dist/js/adminlte.min.js"></script>
+<script src="{{asset('assets')}}/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../dist/js/demo.js"></script>
+<script src="{{asset('assets')}}/dist/js/demo.js"></script>
 <!-- Filterizr-->
-<script src="../plugins/filterizr/jquery.filterizr.min.js"></script>
+<script src="{{asset('assets')}}/plugins/filterizr/jquery.filterizr.min.js"></script>
 <!-- Page specific script -->
 <script>
   $(function () {
