@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class POSTController extends Controller
 {
@@ -35,7 +36,7 @@ class POSTController extends Controller
             $post['title'] = $request->title;
             $post['discription'] = $request->title;
             $post['notes'] = $request->title;
-            $post['created_by'] = auth()->user()->id;
+            $post['created_by'] = Auth::user()->id;
 
 
             Post::create($post);
@@ -78,7 +79,8 @@ class POSTController extends Controller
             $postUpdate['title'] = $request->title;
             $postUpdate['discription'] = $request->title;
             $postUpdate['notes'] = $request->title;
-            $postUpdate['updated_by'] = auth()->user()->id;
+            $post['updated_by'] = Auth::user()->id;
+
 
             $postUpdate->save();
 
