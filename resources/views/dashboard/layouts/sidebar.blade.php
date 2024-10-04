@@ -35,19 +35,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'index')) }}" class="nav-link active">
+                            <a href="{{ url('/' . ($page = 'index')) }}" class="nav-link @yield('active-index')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Dashboard v1</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'index2')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'index2')) }}" class="nav-link @yield('active-index2')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Dashboard v2</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'index3')) }}" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'index3')) }}" class="nav-link @yield('active-index3')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Dashboard v3</p>
                             </a>
@@ -229,19 +229,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/forms/general.html" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'forms-general')) }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>General Elements</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/forms/advanced.html" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'forms-advanced')) }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Advanced Elements</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/forms/editors.html" class="nav-link">
+                            <a href="{{ url('/' . ($page = 'forms-editors')) }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Editors</p>
                             </a>

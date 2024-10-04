@@ -1,3 +1,5 @@
+@section('active-examples-language-menu','active')
+
 <!DOCTYPE html>
 <html>
 

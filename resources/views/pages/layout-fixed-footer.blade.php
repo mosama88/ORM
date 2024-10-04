@@ -1,3 +1,5 @@
+@section('active-layout-fixed-footer','active')
+
 <!DOCTYPE html>
 <html>
 

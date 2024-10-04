@@ -1,3 +1,5 @@
+@section('active-forms-general','active')
+
 <!DOCTYPE html>
 <html>
 

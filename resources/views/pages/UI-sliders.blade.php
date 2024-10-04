@@ -1,3 +1,5 @@
+@section('active-UI-sliders','active')
+
 <!DOCTYPE html>
 <html>
 

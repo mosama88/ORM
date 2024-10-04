@@ -1,3 +1,5 @@
+@section('active-mailbox-read-mail','active')
+
 <!DOCTYPE html>
 <html>
 

@@ -1,3 +1,5 @@
+@section('active-UI-icons','active')
+
 <!DOCTYPE html>
 <html>
 

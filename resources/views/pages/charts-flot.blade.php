@@ -1,3 +1,5 @@
+@section('active-charts-flot','active')
+
 <!DOCTYPE html>
 <html>
 

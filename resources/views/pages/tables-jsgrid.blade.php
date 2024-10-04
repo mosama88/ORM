@@ -1,3 +1,5 @@
+@section('active-tables-jsgrid','active')
+
 <!DOCTYPE html>
 <html>
 

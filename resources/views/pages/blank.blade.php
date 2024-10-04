@@ -1,3 +1,5 @@
+@section('active-blank','active')
+
 <!DOCTYPE html>
 <html>
 

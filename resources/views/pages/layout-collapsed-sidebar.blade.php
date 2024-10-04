@@ -1,3 +1,5 @@
+@section('active-layout-collapsed-sidebar','active')
+
 <!DOCTYPE html>
 <html>
 

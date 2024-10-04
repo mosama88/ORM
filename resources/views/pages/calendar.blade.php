@@ -1,3 +1,5 @@
+@section('active-calendar','active')
+
 <!DOCTYPE html>
 <html>
 <head>

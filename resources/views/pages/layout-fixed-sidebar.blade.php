@@ -1,3 +1,5 @@
+@section('active-layout-fixed-sidebar','active')
+
 <!DOCTYPE html>
 <html>
 

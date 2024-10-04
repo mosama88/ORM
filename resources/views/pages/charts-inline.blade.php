@@ -1,3 +1,5 @@
+@section('active-charts-inline','active')
+
 <!DOCTYPE html>
 <html>
 <head>

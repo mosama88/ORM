@@ -1,3 +1,5 @@
+@section('active-index2','active')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

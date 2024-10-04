@@ -1,3 +1,6 @@
+
+@section('active-mailbox-compose','active')
+
 <!DOCTYPE html>
 <html>
 

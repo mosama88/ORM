@@ -1,3 +1,5 @@
+@section('active-examples-e_commerce','active')
+
 <!DOCTYPE html>
 <html>
 

@@ -1,3 +1,4 @@
+@section('active-index','active')
 <!DOCTYPE html>
 <html>
 <head>

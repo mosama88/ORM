@@ -1,3 +1,5 @@
+
+@section('active-profile','active')
 <!DOCTYPE html>
 <html>
 

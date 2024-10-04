@@ -1,3 +1,5 @@
+@section('active-forms-editors','active')
+
 <!DOCTYPE html>
 <html>
 

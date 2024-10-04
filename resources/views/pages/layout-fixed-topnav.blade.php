@@ -1,3 +1,5 @@
+@section('active-layout-fixed-topnav','active')
+
 <!DOCTYPE html>
 <html>
 

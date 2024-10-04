@@ -1,3 +1,5 @@
+@section('active-gallery','active')
+
 <!DOCTYPE html>
 <html>
 <head>

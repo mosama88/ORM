@@ -1,3 +1,5 @@
+@section('active-tables-data','active')
+
 <!DOCTYPE html>
 <html>
 

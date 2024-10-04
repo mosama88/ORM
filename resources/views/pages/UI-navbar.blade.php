@@ -1,3 +1,5 @@
+@section('active-UI-navbar','active')
+
 <!DOCTYPE html>
 <html>
 

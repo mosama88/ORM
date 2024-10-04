@@ -1,3 +1,5 @@
+@section('active-widgets','active')
+
 <!DOCTYPE html>
 <html>
 

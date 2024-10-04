@@ -1,3 +1,5 @@
+@section('active-UI-general','active')
+
 <!DOCTYPE html>
 <html>
 

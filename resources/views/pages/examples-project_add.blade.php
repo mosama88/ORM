@@ -1,3 +1,5 @@
+@section('active-examples-project_add','active')
+
 <!DOCTYPE html>
 <html>
 

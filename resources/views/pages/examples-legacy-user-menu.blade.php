@@ -1,3 +1,5 @@
+@section('active-examples-legacy-user-menu','active')
+
 <!DOCTYPE html>
 <html>
 

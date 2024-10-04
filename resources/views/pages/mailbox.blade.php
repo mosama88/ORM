@@ -1,3 +1,5 @@
+@section('active-mailbox','active')
+
 <!DOCTYPE html>
 <html>
 

@@ -1,3 +1,5 @@
+@section('active-layout-boxed','active')
+
 <!DOCTYPE html>
 <html>
 

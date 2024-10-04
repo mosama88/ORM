@@ -1,3 +1,5 @@
+@section('active-UI-modals','active')
+
 <!DOCTYPE html>
 <html>
 

@@ -1,3 +1,5 @@
+@section('active-examples-invoice','active')
+
 <!DOCTYPE html>
 <html>
 

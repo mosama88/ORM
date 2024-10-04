@@ -1,3 +1,5 @@
+@section('active-UI-ribbons','active')
+
 <!DOCTYPE html>
 <html>
 

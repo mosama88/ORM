@@ -1,3 +1,5 @@
+@section('active-charts-chartjs','active')
+
 <!DOCTYPE html>
 <html>
 
