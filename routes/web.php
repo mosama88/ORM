@@ -1,12 +1,14 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\POSTController;
 use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/{page}', [PageController::class, 'home']);
 
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard.index');
@@ -19,5 +21,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('posts', POSTController::class);
 });
+
+
 
 require __DIR__ . '/auth.php';

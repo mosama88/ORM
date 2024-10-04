@@ -13,6 +13,8 @@ class POSTController extends Controller
 
     public function index()
     {
+        // $collect = collect([1, 2, 3]);
+        // dd($collect);
         // $data = dd( Post::orderBy('id', 'DESC')->take(1)->toSql());
         $data = Post::orderBy('id', 'DESC')->paginate(5);
         return view('dashboard.posts.index', ['data' => $data]);
