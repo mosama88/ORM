@@ -27,7 +27,9 @@
        with font-awesome or any other icon font library -->
                 <li
                     class="nav-item has-treeview    {{ request()->is('index*') || request()->is('index2*') || request()->is('index3*') ? 'menu-open' : '' }} ">
-                    <a href="{{ url('/') }}" class="nav-link active">
+                    <a href="{{ url('/') }}"
+                        class="nav-link {{ request()->is('index*') || request()->is('index2*') || request()->is('index3*') ? 'active' : '' }} ">
+
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -57,7 +59,7 @@
                 </li>
 
                 <li class="nav-item has-treeview    {{ request()->is('posts*') ? 'menu-open' : '' }} ">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link {{ request()->is('posts*') ? 'active' : '' }} ">
                         <i class="nav-icon fas fa-edit"></i>
                         <p>
                             Posts
@@ -86,7 +88,8 @@
                 </li>
                 <li
                     class="nav-item has-treeview    {{ request()->is('layout-top-nav*') || request()->is('layout-boxed*') || request()->is('layout-fixed-sidebar*') || request()->is('layout-fixed-topnav*') || request()->is('layout-fixed-footer*') || request()->is('layout-collapsed-sidebar*') ? 'menu-open' : '' }} ">
-                    <a href="#" class="nav-link">
+                    <a href="#"
+                        class="nav-link {{ request()->is('layout-top-nav*') || request()->is('layout-boxed*') || request()->is('layout-fixed-sidebar*') || request()->is('layout-fixed-topnav*') || request()->is('layout-fixed-footer*') || request()->is('layout-collapsed-sidebar*') ? 'active' : '' }} ">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Layout Options
@@ -140,7 +143,8 @@
                 <li
                     class="nav-item has-treeview    {{ request()->is('charts-chartjs*') || request()->is('charts-flot*') || request()->is('charts-inline*') ? 'menu-open' : '' }} ">
 
-                    <a href="#" class="nav-link">
+                    <a href="#"
+                        class="nav-link {{ request()->is('charts-chartjs*') || request()->is('charts-flot*') || request()->is('charts-inline*') ? 'active' : '' }} ">
                         <i class="nav-icon fas fa-chart-pie"></i>
                         <p>
                             Charts
@@ -170,7 +174,8 @@
                 </li>
                 <li
                     class="nav-item has-treeview    {{ request()->is('UI-general*') || request()->is('UI-icons*') || request()->is('UI-buttons*') || request()->is('UI-sliders*') || request()->is('UI-modals*') || request()->is('UI-navbar*') || request()->is('UI-timeline*') || request()->is('UI-ribbons*') ? 'menu-open' : '' }} ">
-                    <a href="#" class="nav-link">
+                    <a href="#"
+                        class="nav-link {{ request()->is('UI-general*') || request()->is('UI-icons*') || request()->is('UI-buttons*') || request()->is('UI-sliders*') || request()->is('UI-modals*') || request()->is('UI-navbar*') || request()->is('UI-timeline*') || request()->is('UI-ribbons*') ? 'active' : '' }} ">
                         <i class="nav-icon fas fa-tree"></i>
                         <p>
                             UI Elements
@@ -231,7 +236,8 @@
                 <li
                     class="nav-item has-treeview    {{ request()->is('forms-general*') || request()->is('forms-editors*') || request()->is('forms-advanced*') ? 'menu-open' : '' }} ">
 
-                    <a href="#" class="nav-link">
+                    <a href="#"
+                        class="nav-link {{ request()->is('forms-general*') || request()->is('forms-editors*') || request()->is('forms-advanced*') ? 'active' : '' }} ">
                         <i class="nav-icon fas fa-edit"></i>
                         <p>
                             Forms
@@ -262,7 +268,8 @@
                 </li>
                 <li
                     class="nav-item has-treeview    {{ request()->is('tables-simple*') || request()->is('tables-data*') || request()->is('tables-jsgrid*') ? 'menu-open' : '' }} ">
-                    <a href="#" class="nav-link">
+                    <a href="#"
+                        class="nav-link {{ request()->is('tables-simple*') || request()->is('tables-data*') || request()->is('tables-jsgrid*') ? 'active' : '' }} ">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
                             Tables
@@ -310,7 +317,8 @@
                 </li>
                 <li
                     class="nav-item has-treeview    {{ request()->is('mailbox*') || request()->is('mailbox-compose*') || request()->is('mailbox-read-mail*') ? 'menu-open' : '' }} ">
-                    <a href="#" class="nav-link">
+                    <a href="#"
+                        class="nav-link {{ request()->is('mailbox*') || request()->is('mailbox-compose*') || request()->is('mailbox-read-mail*') ? 'active' : '' }} ">
                         <i class="nav-icon far fa-envelope"></i>
                         <p>
                             Mailbox
@@ -342,7 +350,8 @@
                 </li>
                 <li
                     class="nav-item has-treeview    {{ request()->is('examples-invoice*') || request()->is('page-profile*') || request()->is('examples-e_commerce*') || request()->is('examples-projects*') || request()->is('examples-project_add*') || request()->is('examples-project_edit*') || request()->is('examples-project_detail*') || request()->is('examples-contacts*') ? 'menu-open' : '' }} ">
-                    <a href="#" class="nav-link">
+                    <a href="#"
+                        class="nav-link {{ request()->is('examples-invoice*') || request()->is('page-profile*') || request()->is('examples-e_commerce*') || request()->is('examples-projects*') || request()->is('examples-project_add*') || request()->is('examples-project_edit*') || request()->is('examples-project_detail*') || request()->is('examples-contacts*') ? 'active' : '' }} ">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
                             Pages
@@ -409,7 +418,8 @@
                 </li>
                 <li
                     class="nav-item has-treeview    {{ request()->is('examples-legacy-user-menu*') || request()->is('examples-language-menu*') || request()->is('examples-examples-404*') || request()->is('examples-examples-500*') || request()->is('examples-blank*') || request()->is('examples-project_edit*') || request()->is('examples-project_detail*') || request()->is('examples-contacts*') ? 'menu-open' : '' }} ">
-                    <a href="#" class="nav-link">
+                    <a href="#"
+                        class="nav-link {{ request()->is('examples-legacy-user-menu*') || request()->is('examples-language-menu*') || request()->is('examples-examples-404*') || request()->is('examples-examples-500*') || request()->is('examples-blank*') || request()->is('examples-project_edit*') || request()->is('examples-project_detail*') || request()->is('examples-contacts*') ? 'active' : '' }} ">
                         <i class="nav-icon far fa-plus-square"></i>
                         <p>
                             Extras
