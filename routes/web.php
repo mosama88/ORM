@@ -22,6 +22,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('posts', POSTController::class);
 });
 
-Route::get('/{page}', [PageController::class, 'home']);
 
 require __DIR__ . '/auth.php';
+Route::get('/{page}', [PageController::class, 'home']);

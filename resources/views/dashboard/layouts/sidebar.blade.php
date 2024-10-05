@@ -25,7 +25,8 @@
                 data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
        with font-awesome or any other icon font library -->
-                <li class="nav-item has-treeview menu-open">
+                <li
+                    class="nav-item has-treeview    {{ request()->is('index*') || request()->is('index2*') || request()->is('index3*') ? 'menu-open' : '' }} ">
                     <a href="{{ url('/') }}" class="nav-link active">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
@@ -55,7 +56,7 @@
                     </ul>
                 </li>
 
-                <li class="nav-item has-treeview">
+                <li class="nav-item has-treeview    {{ request()->is('posts*') ? 'menu-open' : '' }} ">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-edit"></i>
                         <p>
@@ -83,7 +84,8 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item has-treeview">
+                <li
+                    class="nav-item has-treeview    {{ request()->is('layout-top-nav*') || request()->is('layout-boxed*') || request()->is('layout-fixed-sidebar*') || request()->is('layout-fixed-topnav*') || request()->is('layout-fixed-footer*') || request()->is('layout-collapsed-sidebar*') ? 'menu-open' : '' }} ">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
@@ -135,7 +137,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item has-treeview">
+                <li
+                    class="nav-item has-treeview    {{ request()->is('charts-chartjs*') || request()->is('charts-flot*') || request()->is('charts-inline*') ? 'menu-open' : '' }} ">
+
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-chart-pie"></i>
                         <p>
@@ -164,7 +168,8 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item has-treeview">
+                <li
+                    class="nav-item has-treeview    {{ request()->is('UI-general*') || request()->is('UI-icons*') || request()->is('UI-buttons*') || request()->is('UI-sliders*') || request()->is('UI-modals*') || request()->is('UI-navbar*') || request()->is('UI-timeline*') || request()->is('UI-ribbons*') ? 'menu-open' : '' }} ">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tree"></i>
                         <p>
@@ -223,7 +228,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item has-treeview">
+                <li
+                    class="nav-item has-treeview    {{ request()->is('forms-general*') || request()->is('forms-editors*') || request()->is('forms-advanced*') ? 'menu-open' : '' }} ">
+
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-edit"></i>
                         <p>
@@ -253,7 +260,8 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item has-treeview">
+                <li
+                    class="nav-item has-treeview    {{ request()->is('tables-simple*') || request()->is('tables-data*') || request()->is('tables-jsgrid*') ? 'menu-open' : '' }} ">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
@@ -284,8 +292,7 @@
                 </li>
                 <li class="nav-header">EXAMPLES</li>
                 <li class="nav-item">
-                    <a href="pages/calendar.html{{ url('/' . ($page = 'calendar')) }}"
-                        class="nav-link @yield('active-calendar')">
+                    <a href="{{ url('/' . ($page = 'calendar')) }}" class="nav-link @yield('active-calendar')">
                         <i class="nav-icon far fa-calendar-alt"></i>
                         <p>
                             Calendar
@@ -301,7 +308,8 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item has-treeview">
+                <li
+                    class="nav-item has-treeview    {{ request()->is('mailbox*') || request()->is('mailbox-compose*') || request()->is('mailbox-read-mail*') ? 'menu-open' : '' }} ">
                     <a href="#" class="nav-link">
                         <i class="nav-icon far fa-envelope"></i>
                         <p>
@@ -332,7 +340,8 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item has-treeview">
+                <li
+                    class="nav-item has-treeview    {{ request()->is('examples-invoice*') || request()->is('page-profile*') || request()->is('examples-e_commerce*') || request()->is('examples-projects*') || request()->is('examples-project_add*') || request()->is('examples-project_edit*') || request()->is('examples-project_detail*') || request()->is('examples-contacts*') ? 'menu-open' : '' }} ">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-book"></i>
                         <p>
@@ -349,7 +358,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'profile')) }}" class="nav-link @yield('active-profile')">
+                            <a href="{{ url('/' . ($page = 'page-profile')) }}" class="nav-link @yield('active-page-profile')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Profile</p>
                             </a>
@@ -398,7 +407,8 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item has-treeview">
+                <li
+                    class="nav-item has-treeview    {{ request()->is('examples-legacy-user-menu*') || request()->is('examples-language-menu*') || request()->is('examples-examples-404*') || request()->is('examples-examples-500*') || request()->is('examples-blank*') || request()->is('examples-project_edit*') || request()->is('examples-project_detail*') || request()->is('examples-contacts*') ? 'menu-open' : '' }} ">
                     <a href="#" class="nav-link">
                         <i class="nav-icon far fa-plus-square"></i>
                         <p>
@@ -408,13 +418,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'login')) }}" class="nav-link @yield('active-login')">
+                            <a href="{{ url('/' . ($page = 'page-login')) }}" class="nav-link @yield('active-page-login')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Login</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'register')) }}" class="nav-link @yield('active-register')">
+                            <a href="{{ url('/' . ($page = 'page-register')) }}" class="nav-link @yield('active-page-register')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Register</p>
                             </a>

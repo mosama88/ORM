@@ -1,5 +1,6 @@
 @extends('dashboard.layouts.master')
 @section('title', 'Posts')
+@section('active-posts-index', 'active')
 @section('css')
 @endsection
 

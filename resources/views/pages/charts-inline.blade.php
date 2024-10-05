@@ -521,7 +521,6 @@
 
     $('.barformat').sparkline([1, 3, 5, 3, 8], {
       type               : 'bar',
-      tooltipFormat      : '{{value:levels}} - {{value}}',
       tooltipValueLookups: {
         levels: $.range_map({
           ':2' : 'Low',

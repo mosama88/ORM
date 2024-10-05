@@ -1,3 +1,4 @@
+@section('active-layout-top-nav','active')
 <!DOCTYPE html>
 <html>
 

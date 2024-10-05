@@ -1,5 +1,5 @@
 
-@section('active-profile','active')
+@section('active-page-profile','active')
 <!DOCTYPE html>
 <html>
 
