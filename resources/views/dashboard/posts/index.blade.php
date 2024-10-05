@@ -1,7 +1,12 @@
 @extends('dashboard.layouts.master')
 @section('title', 'Posts')
-@section('active-posts-index', 'active')
 @section('css')
+@endsection
+@section('active-posts-index', 'active')
+@section('page-header', 'Posts')
+@section('page-header_desc', 'Posts')
+@section('page-header_link')
+    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
 @endsection
 
 @section('content')

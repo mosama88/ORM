@@ -2,6 +2,11 @@
 @section('title', 'Posts')
 @section('css')
 @endsection
+@section('page-header', 'Create Post')
+@section('page-header_desc', 'Create Post')
+@section('page-header_link')
+<li class="breadcrumb-item"><a href="{{ route('posts.index') }}">Post Index</a></li>
+@endsection
 @section('content')
 
 

@@ -2,26 +2,31 @@
 @section('title', 'Posts')
 @section('css')
 @endsection
+@section('page-header', 'Edit Post')
+@section('page-header_desc', 'Edit Post')
+@section('page-header_link')
+    <li class="breadcrumb-item"><a href="{{ route('posts.index') }}">Post Index</a></li>
+@endsection
 @section('content')
 
 
 
-@if (session('success') != null)
-<div class="alert alert-success text-center">
-    {{ session('success') }}
-</div>
-@endif
+    @if (session('success') != null)
+        <div class="alert alert-success text-center">
+            {{ session('success') }}
+        </div>
+    @endif
 
 
 
 
-@if ($errors->any())
-@foreach ($errors->all() as $error)
-    <div class="alert alert-danger text-center">
-        {{ $error }}
-    </div>
-@endforeach
-@endif
+    @if ($errors->any())
+        @foreach ($errors->all() as $error)
+            <div class="alert alert-danger text-center">
+                {{ $error }}
+            </div>
+        @endforeach
+    @endif
     <div class="row">
         <!-- left column -->
         <div class="col-md-12">
