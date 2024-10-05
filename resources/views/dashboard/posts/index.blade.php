@@ -1,6 +1,8 @@
 @extends('dashboard.layouts.master')
 @section('title', 'Posts')
 @section('css')
+<!-- DataTables -->
+<link rel="stylesheet" href="{{ asset('assets') }}/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
 @endsection
 @section('active-posts-index', 'active')
 @section('page-header', 'Posts')
@@ -52,7 +54,8 @@
 
                 <!-- /.card-header -->
                 <div class="card-body table-responsive p-0">
-                    <table class="table table-bordered">
+                    <table id="example2" class="table table-bordered table-hover">
+
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -103,6 +106,7 @@
                                         </td>
                                     </tr>
                                 @endforeach
+                                {{-- {{ $data->render("pagination::bootstrap-5") }} --}}
                             @else
                                 لا توجد بيانات
                             @endif
@@ -120,4 +124,20 @@
 
 @endsection
 @section('scripts')
+    <!-- DataTables -->
+    <script src="{{ asset('assets') }}/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="{{ asset('assets') }}/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script>
+        $(function() {
+            $("#example1").DataTable();
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+            });
+        });
+    </script>
 @endsection
