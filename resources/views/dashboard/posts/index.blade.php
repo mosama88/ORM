@@ -1,8 +1,8 @@
 @extends('dashboard.layouts.master')
 @section('title', 'Posts')
 @section('css')
-<!-- DataTables -->
-<link rel="stylesheet" href="{{ asset('assets') }}/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ asset('assets') }}/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
 @endsection
 @section('active-posts-index', 'active')
 @section('page-header', 'Posts')
@@ -93,14 +93,14 @@
 
                                         <td>
                                             <a type="button" href="{{ route('posts.edit', $info['id']) }}"
-                                                class="btn btn-block btn-info btn-sm">
-                                                edit</a>
+                                                class="btn btn-small btn-info btn-sm">
+                                                <i class="fas fa-edit"></i></a>
                                             <form action="{{ route('posts.destroy', $info['id']) }}" method="POST"
                                                 onsubmit="return confirm('Are you sure you want to delete this post?');">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-block btn-danger btn-sm">
-                                                    Delete
+                                                <button type="submit" class="btn btn-small btn-danger btn-sm">
+                                                    <i class="fas fa-trash-alt"></i>
                                                 </button>
                                             </form>
                                         </td>
