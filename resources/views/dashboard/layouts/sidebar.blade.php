@@ -58,8 +58,10 @@
                     </ul>
                 </li>
 
-                <li class="nav-item has-treeview    {{ request()->is('posts*') ? 'menu-open' : '' }} ">
-                    <a href="#" class="nav-link {{ request()->is('posts*') ? 'active' : '' }} ">
+                <li
+                    class="nav-item has-treeview    {{ request()->is('posts*') | request()->is('comments*') ? 'menu-open' : '' }} ">
+                    <a href="#"
+                        class="nav-link {{ request()->is('posts*') | request()->is('comments*') ? 'active' : '' }} ">
                         <i class="nav-icon fas fa-edit"></i>
                         <p>
                             Posts
@@ -70,7 +72,14 @@
                         <li class="nav-item">
                             <a href="{{ route('posts.index') }}" class="nav-link @yield('active-posts-index')">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Index</p>
+                                <p>Posts</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('comments.index') }}" class="nav-link @yield('active-posts-index')">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Comments</p>
                             </a>
                         </li>
                     </ul>
