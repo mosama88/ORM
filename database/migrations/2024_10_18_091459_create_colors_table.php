@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('comments', function (Blueprint $table) {
-            $table->uuid('id');
+        Schema::create('colors', function (Blueprint $table) {
+            $table->id();
             $table->string('name');
-            $table->text('comments');
-            $table->text('description');
-            $table->date('date');
-            $table->integer('status')->default(0)->nullable();
+            $table->string('hexa_code');
+            $table->integer('status');
             $table->timestamps();
         });
     }
@@ -27,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('comments');
+        Schema::dropIfExists('colors');
     }
 };

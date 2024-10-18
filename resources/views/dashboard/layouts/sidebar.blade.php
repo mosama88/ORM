@@ -82,6 +82,20 @@
                                 <p>Comments</p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('colors.index') }}" class="nav-link @yield('active-posts-index')">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Colors</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('sizes.index') }}" class="nav-link @yield('active-posts-index')">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Size</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
@@ -162,7 +176,8 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ url('/' . ($page = 'charts-chartjs')) }}" class="nav-link @yield('active-charts-chartjs')">
+                            <a href="{{ url('/' . ($page = 'charts-chartjs')) }}"
+                                class="nav-link @yield('active-charts-chartjs')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>ChartJS</p>
                             </a>

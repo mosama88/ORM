@@ -12,4 +12,19 @@ class Comment extends Model
 
     protected $table = 'comments';
     public $guarded = [];
+
+
+    public function uniqueIds(): array
+    {
+        return ['id', 'comments'];
+    }
+
+
+    public $timestamps = false;
+
+    protected $attributes = [
+        'options' => '[]',
+        'delayed' => false,
+    ];
+      
 }
